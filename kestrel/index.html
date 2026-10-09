@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kestrel Destek</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --accent: #6a4cff; --card: #f5f5f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111114; --fg: #f5f5f7; --muted: #a1a1a6; --accent: #8f7bff; --card: #1c1c21; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header img { width: 72px; height: 72px; }
+  h1 { font-size: 32px; margin: 0; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  details { background: var(--card); border-radius: 12px; padding: 12px 16px; margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 8px 0 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  nav a { margin-right: 16px; text-decoration: none; }
+  hr { border: none; border-top: 1px solid var(--card); margin: 48px 0; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="#tr">Türkçe</a><a href="#en">English</a><a href="privacy.html">Gizlilik / Privacy</a></nav>
+
+  <section id="tr" lang="tr">
+    <header><img src="icon.png" alt=""><h1>Kestrel</h1></header>
+    <p class="muted">Mac'inin sağlığını menü çubuğundan izle.</p>
+
+    <h2>Sık sorulanlar</h2>
+    <details><summary>Kestrel'i açtım ama pencere göremiyorum.</summary>
+      <p>Kestrel menü çubuğunda çalışır. Ekranın sağ üstünde, saatin yanındaki kalp ve CPU/MEM göstergesine tıkla.</p></details>
+    <details><summary>Bildirimler gelmiyor.</summary>
+      <p>Sistem Ayarları › Bildirimler › Kestrel bölümünden bildirimlere izin ver. Butonların doğrudan görünmesi için stili "Uyarılar" yap.</p></details>
+    <details><summary>Disk temizliği yalnızca İndirilenler'i gösteriyor.</summary>
+      <p>Temizlik penceresindeki "Erişim Ver" ile ev klasörünü seç. Böylece büyük dosyalar ve Xcode, npm, Gradle gibi geliştirici artıkları da bulunur. Hiçbir dosya sen onaylamadan silinmez; onayladıkların Çöp Sepeti'ne taşınır.</p></details>
+    <details><summary>Neden hangi uygulamanın ne kadar bellek kullandığını göstermiyor?</summary>
+      <p>Mac App Store uygulamaları güvenlik nedeniyle diğer uygulamaların bilgilerini okuyamaz. Bunun için paneldeki Etkinlik Monitörü düğmesini kullanabilirsin. Kurallar ise bir Kısayol çalıştırarak istediğin uygulamaları kapatabilir.</p></details>
+    <details><summary>Pil kapasitesi Sistem Ayarları'ndakinden farklı.</summary>
+      <p>Kestrel, tam şarj kapasitesini pilin tasarım kapasitesine oranlar. Apple'ın hesabı farklı olduğu için birkaç puan fark normaldir.</p></details>
+
+    <h2>İletişim</h2>
+    <p>Sorun, öneri ya da hata bildirimi için: <a href="mailto:bccappsupport@gmail.com">bccappsupport@gmail.com</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>Kestrel Support</h1>
+    <p class="muted">Monitor your Mac's health from the menu bar.</p>
+
+    <h2>FAQ</h2>
+    <details><summary>I opened Kestrel but don't see a window.</summary>
+      <p>Kestrel lives in the menu bar. Click the heart and CPU/MEM indicator at the top right of your screen, next to the clock.</p></details>
+    <details><summary>I'm not getting notifications.</summary>
+      <p>Allow notifications in System Settings › Notifications › Kestrel. Set the style to "Alerts" to see the action buttons directly.</p></details>
+    <details><summary>Disk cleanup only shows my Downloads folder.</summary>
+      <p>Click "Grant Access" in the cleanup window and choose your home folder to also find large files and developer leftovers such as Xcode, npm, and Gradle caches. Nothing is deleted without your confirmation; confirmed items go to the Trash.</p></details>
+    <details><summary>Why doesn't it show how much memory each app uses?</summary>
+      <p>For security, Mac App Store apps can't read information about other apps. Use the Activity Monitor button in the panel instead. Rules can run a Shortcut to quit the apps you choose.</p></details>
+    <details><summary>Battery capacity differs from System Settings.</summary>
+      <p>Kestrel compares the full charge capacity with the battery's design capacity. Apple uses a different calculation, so a difference of a few points is normal.</p></details>
+
+    <h2>Contact</h2>
+    <p>Questions, ideas, or bug reports: <a href="mailto:bccappsupport@gmail.com">bccappsupport@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
