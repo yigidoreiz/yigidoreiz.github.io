@@ -19,9 +19,8 @@
   .summary { background: var(--card); border-radius: 14px; padding: 16px 20px; margin: 24px 0; }
   nav a { color: var(--accent); text-decoration: none; margin-right: 16px; }
   hr { border: none; border-top: 1px solid var(--card); margin: 48px 0; }
-  .yt { display:inline-flex; align-items:center; gap:8px; font-weight:700; }
-  .yt svg { width:28px; height:20px; }
   .links a { display:inline-block; margin:4px 16px 4px 0; color: var(--accent); }
+  a { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -30,8 +29,8 @@
 
   <section id="tr" lang="tr">
     <h1>Shorts Factory</h1>
-    <p class="muted">Kişisel kısa video otomasyon aracı · <span class="yt"><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>YouTube</span> API Servisleri ile çalışır</p>
-    <div class="summary">Shorts Factory, geliştiricinin kendi <span class="yt"><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>YouTube</span> kanalı için kısa videolar hazırlayan ve <strong>YouTube API Servisleri</strong> aracılığıyla yükleyen kişisel bir araçtır. Herkese açık bir hizmet değildir; başka kişilerin hesaplarına erişmez.</div>
+    <p class="muted">Kişisel kısa video otomasyon aracı · <strong>YouTube</strong> API Servisleri ile çalışır</p>
+    <div class="summary">Shorts Factory, geliştiricinin kendi <strong>YouTube</strong> kanalı için kısa videolar hazırlayan ve <strong>YouTube API Servisleri</strong> aracılığıyla yükleyen kişisel bir araçtır. Herkese açık bir hizmet değildir; başka kişilerin hesaplarına erişmez.</div>
     <h2>Ne yapar?</h2>
     <p>Bilgi, quiz ve hikâye formatında kısa videolar üretir ve bunları YouTube Data API'nin <code>videos.insert</code> yöntemiyle yalnızca geliştiricinin yetkilendirdiği kendi kanalına yükler. YouTube erişimi sadece video yükleme izniyle (<code>youtube.upload</code>) sınırlıdır.</p>
     <h2>Yasal</h2>
@@ -45,8 +44,8 @@
 
   <section id="en" lang="en">
     <h1>Shorts Factory</h1>
-    <p class="muted">Personal short-video automation tool · powered by <span class="yt"><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>YouTube</span> API Services</p>
-    <div class="summary">Shorts Factory is a personal tool that prepares short videos for the developer's own <span class="yt"><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>YouTube</span> channel and uploads them through the <strong>YouTube API Services</strong>. It is not a public service and does not access anyone else's accounts.</div>
+    <p class="muted">Personal short-video automation tool · powered by <strong>YouTube</strong> API Services</p>
+    <div class="summary">Shorts Factory is a personal tool that prepares short videos for the developer's own <strong>YouTube</strong> channel and uploads them through the <strong>YouTube API Services</strong>. It is not a public service and does not access anyone else's accounts.</div>
     <h2>What it does</h2>
     <p>It produces short fact, quiz and story videos and uploads them with the YouTube Data API <code>videos.insert</code> method, only to the developer's own channel that the developer has authorized. YouTube access is limited to the upload permission (<code>youtube.upload</code>).</p>
     <h2>Legal</h2>
